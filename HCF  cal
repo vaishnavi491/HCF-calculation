@@ -1,0 +1,7 @@
+# You are given two integers 'n', and 'm'.Calculate 'gcd(n,m)', without using library functions.
+int calcGCD(int n, int m){
+   if(m == 0) 
+        return n;
+    return calcGCD(m, n % m);
+
+}
